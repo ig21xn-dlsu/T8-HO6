@@ -1,4 +1,9 @@
-<?php include('nav.php'); ?>
+<?php include('nav.php'); 
+require 'db.php';
+
+$sql = $pdo->query('SELECT * FROM books;');
+$books = $sql->fetchall(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
