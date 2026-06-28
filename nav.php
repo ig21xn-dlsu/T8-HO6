@@ -12,10 +12,8 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a id="books" href="index.php">Books</a></li>
-            <li><a id="add-Books" href="add.php">Add </a></li>
-        </ul>
+        <a id="books" href="index.php">Books</a>
+        <a id="add-Books" href="add.php">Add </a>
     </nav>
 
     <?php session_start(); ?>
