@@ -1,8 +1,7 @@
 <?php
+session_start();
 
 require 'db.php';
-
-echo 'hello';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -23,5 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ':description' => $description
   ]);
 
-  echo "Record saved successfully!";
+  $_SESSION['message'] = "Record saved successfully!";
+  header("Location: add.php");
 }

@@ -17,3 +17,14 @@
             <li><a id="add-Books" href="add.php">Add </a></li>
         </ul>
     </nav>
+
+    <?php session_start(); ?>
+
+    <h3>
+        <?php
+        if (isset($_SESSION['message'])) {
+            echo htmlspecialchars($_SESSION['message']);
+            unset($_SESSION['message']);
+        }
+        ?>
+    </h3>
