@@ -12,7 +12,7 @@
 
 <body>
     <nav>
-        <a class="nostyle" id="books" href="index.php">Books</a>
+        <a class="nostyle" id="books" href="index.php">Books</a> |
         <a class="nostyle" id="add-Books" href="add.php">Add </a>
     </nav>
 

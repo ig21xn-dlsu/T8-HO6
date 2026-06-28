@@ -26,6 +26,10 @@ a.nostyle:visited {
     cursor: auto;
 }
 
+a:hover {
+    transform: scale(1.1);
+}
+
 nav {
     display: flex;
     flex-direction: row;
