@@ -28,6 +28,14 @@ a.nostyle:visited {
 
 a:hover {
     transform: scale(1.1);
+    cursor: pointer;
+}
+
+a.active {
+    font-weight: bold;
+    color: #ffcc00 !important; 
+    text-decoration: underline !important;
+    transform: scale(1.1); 
 }
 
 nav {

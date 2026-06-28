@@ -1,3 +1,6 @@
+<?php
+$current_page = basename($_SERVER['PHP_SELF']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +15,8 @@
 
 <body>
     <nav>
-        <a class="nostyle" id="books" href="index.php">Books</a> |
-        <a class="nostyle" id="add-Books" href="add.php">Add </a>
+        <a class="nostyle <?= ($current_page == 'index.php') ? 'active' : ''; ?>" id="books" href="index.php">Books</a> |
+        <a class="nostyle <?= ($current_page == 'add.php') ? 'active' : ''; ?>" id="add-Books" href="add.php">Add</a>
     </nav>
 
     <?php session_start(); ?>
