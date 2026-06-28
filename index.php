@@ -7,7 +7,7 @@ $sql = $pdo->query('SELECT * FROM books;');
 $books = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-<div class="container mt-4">
+<div class="container mt-4 d-flex justify-content-center">
     <h2>Book Records</h2>
 
     <table class="table table-striped table-bordered mt-3">
