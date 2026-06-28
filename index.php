@@ -1,31 +1,35 @@
-<?php include('nav.php'); 
+<?php
+include('nav.php');
 require 'db.php';
 
+// Fetch all records from the books table
 $sql = $pdo->query('SELECT * FROM books;');
-$books = $sql->fetchall(PDO::FETCH_ASSOC);
+$books = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section>
-        <table>
+
+<div class="container mt-4">
+    <h2>Book Records</h2>
+
+    <table class="table table-striped table-bordered mt-3">
+        <thead>
             <tr>
-                <th>Row</th>
+                <th># Counter</th>
                 <th>Book Title</th>
                 <th>Description</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>HEEHEE</td>
-                <td>Billie Jeans</td>
-            </tr>
-        </table>
-    </section>
-</body>
-</html>
+        </thead>
+        <tbody>
+            <?php foreach ($books as $book): ?>
+                <tr>
+                    <td><?= htmlspecialchars($book['id']); ?></td>
+                    <td><?= htmlspecialchars($book['title']); ?></td>
+                    <td><?= htmlspecialchars($book['description']); ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
 
+</body>
+
+</html>
