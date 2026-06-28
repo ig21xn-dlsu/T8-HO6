@@ -14,6 +14,18 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
 nav {
     display: flex;
     flex-direction: row;
