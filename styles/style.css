@@ -34,7 +34,6 @@ a:hover {
 a.active {
     font-weight: bold;
     color: #ffcc00 !important; 
-    text-decoration: underline !important;
     transform: scale(1.1); 
 }
 
