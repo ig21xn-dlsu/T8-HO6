@@ -7,15 +7,13 @@
     <title>Books</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <nav>
         <ul>
-            <a id="books" href="index.php">Books</a>
-            <a id="add-Books" href="add.php">Add </a>
+            <li><a id="books" href="index.php">Books</a></li>
+            <li><a id="add-Books" href="add.php">Add </a></li>
         </ul>
     </nav>
-</body>
